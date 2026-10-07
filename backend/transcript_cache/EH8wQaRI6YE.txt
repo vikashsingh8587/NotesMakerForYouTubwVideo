@@ -1,0 +1,157 @@
+ Hello friends, welcome to Gate Smashers
+ In this video, we are going to discuss through an example
+ that how we compare time complexities with each other.
+ Means which time complexity is big and which is small.
+ To discuss this, we are going to discuss an example here.
+ In the last video, we have already discussed 
+ that how we compare the same time complexities.
+ But until you do not solve questions on them,
+ till then you will not be able to do the concept properly.
+ Because the benefit of these questions is that
+ the more variety of questions you will do,
+ the more you will be able to grasp the concept.
+ Because you apply that concept in the questions.
+ And if you will do different types of questions,
+ then the same concept will be built.
+ So here in the question, I have F1.
+ Means a function is given and its time complexity is N square log N.
+ And another F of 2n is here.
+ That is N log N.
+ The power of N log N is 10.
+ Now here I have to find out in the question
+ that is F1 the N is bigger or F2 the N is bigger.
+ In this way, sometimes options also come.
+ That let's say F1N is big of F2N.
+ Or let's say F1N is omega of F2N.
+ In this way, sometimes questions come.
+ So here whenever such questions come,
+ how you have to check,
+ there is one method by putting values.
+ Try putting values.
+ Let's say I put value in this.
+ Let's take the value of N.
+ Let's say 16.
+ Now if I take the value of N as 16.
+ So let's say we take log here 2.
+ If I take 2 on both sides of log.
+ So let's say what value comes?
+ Log 16.
+ How much is log 16?
+ 4.
+ And here if you put the value of N as 16,
+ then 16 square into 4.
+ This will be the answer.
+ And here if I put,
+ then put the value of N as 16.
+ Log 16.
+ Which is what? 4.
+ So 16 into 4 power 10.
+ So here you can clearly see,
+ which is the bigger term from these two terms.
+ This one is the bigger term.
+ But before putting the option,
+ it is important to check it well.
+ We have taken the value of N here as small.
+ But whenever you get such questions,
+ you don't have to take the value of N as small.
+ You try to increase the value of N.
+ If you are getting it in a small value,
+ then fine.
+ But if you definitely want to check it in big values,
+ because only with big values you will know,
+ which is the dominating term from both.
+ Let's say we take the big value,
+ I put the value of N as 10 raised to power 9.
+ 10 raised to power 9.
+ Let's put 1 billion.
+ And for simplification,
+ I take the base of log here as 10 on both sides.
+ So that I can easily do the calculation.
+ Now let's say we write the square of 10 raised to power 9 here.
+ And log base 10, 10 raised to power 9.
+ This will come.
+ Let's put it here as well.
+ 10 raised to power 9 log 10, 10 raised to power 9 to power 10.
+ You can write it like this.
+ Now what does this mean?
+ 10 raised to power 9 into 10 raised to power 9,
+ which now log 10, 10 raised to power 9.
+ What answer will come?
+ Obviously answer will come 9.
+ Because 10 raised to power 9 means
+ how much power it is going to.
+ 9 power is going to, so how much answer I got here.
+ 9 answer came here.
+ And here if you solve, then 10 raised to power 9.
+ And when you solve this, obviously 
+answer will come 9 to power 10.
+ You can write it like this.
+ Now let's say if I divide from both 
+sides 10 raised to power 9,
+ if we divide both sides, then see this one,
+ both these values are cut.
+ And what can I write this?
+ 10 raised to power 9 into 9 and this became 9 into 9 power 9.
+ I took out 1 9 from here.
+ Why did I take it out?
+ Because I cancelled this 9, 9 from here.
+ Now see 10 raised to power 9 is here, 9 raised to power 9 is here.
+ So which is the bigger term between the two?
+ This is the bigger term.
+ Means now this is bigger.
+ First you will say on 16 that sir, this was bigger earlier.
+ But always check on the bigger value.
+ Only then you will know which are the dominating terms.
+ The second way is that you simplify it a little.
+ How will you simplify it?
+ I write N square, N dot N log N.
+ Can you write N square?
+ NL is opened, base A will have power N, so N square will be there.
+ I wrote this N log N and log N to power 9.
+ Means I took out 1 log from log N to power 10.
+ And how much is left? 10.
+ Now what did we do here?
+ From N log N, N log N cancelled.
+ Here N is left and here log N to power 9 is left.
+ Now let's take log on both sides.
+ So what happens here if we take log?
+ Log N is there, log of log N to power 9.
+ Which is what?
+ Here only log N is there.
+ And here 9 will come ahead.
+ 9 dot log of log N.
+ We have already discussed that no matter of constant is here.
+ Constant doesn't matter here.
+ You can write it or not, doesn't matter.
+ Because whenever we open O or omega, we have C.
+ C means constant.
+ So to negotiate this constant, we already have a C constant.
+ So don't write it.
+ So here is log N and on the other side is log of log N.
+ So see which is bigger than log N and log of log N?
+ It is log N term.
+ So where was log N coming?
+ In this one log N was coming.
+ Means this term is clearly bigger than this.
+ So now your final answer comes.
+ By simplifying it, you will get the answer more easily.
+ Otherwise if you put value, always 
+ remember to put the big value.
+ So if you want to write this in terms
+ of order, then what will you write?
+ F2N is order of F1N.
+ What does this mean?
+ F2N is less than equal to C.F1N.
+ You can write it in this way.
+ F2N is less than C.FN.
+ So see FN is big here.
+ Means whatever option you get,
+ whether it is big O or omega,
+ you can check the terms here.
+ So I have not made this option here.
+ This byte code is written here like this.
+ But you can check whatever options you get in that way.
+ But the main purpose was, try to 
+simplify all the questions of this type
+ and try to put the large values.
+Thank You.

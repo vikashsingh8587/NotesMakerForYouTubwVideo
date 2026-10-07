@@ -1,0 +1,177 @@
+Today I'll explain one of the most
+important data structures used in
+databases and file systems, the B+ tree.
+A B+ tree is a self-balancing search
+tree that keeps data sorted and allows
+us to search, insert, and delete records
+in logarithmic time. Now, it's actually
+an extension of the regular B tree. But
+here's the key difference. All the
+actual data is stored only in the leaf
+nodes. And these leaf nodes are linked
+together like a chain.
+Why are B+ trees so important? Well,
+they're especially useful when your data
+is too large to fit entirely in memory.
+So, you need to fetch it from disk.
+Popular databases like MySQL and file
+systems like New Technology File System
+use B+ trees under the hood to keep
+operations fast and efficient. In this
+video, we'll start by understanding how
+a B+ tree is structured. Then step by
+step we'll walk through searching,
+insertion, deletion so you can see
+exactly how everything works. Let's
+start with the structure of a B+ tree. A
+B+ tree is made up of two types of
+nodes. Internal nodes and leaf nodes.
+First, let's talk about internal nodes.
+These store only keys and child
+pointers. Think of them as signposts.
+They guide us where to search, but they
+don't actually store the data itself.
+Leaf nodes, on the other hand, store all
+the actual data or pointers to the data.
+And here's something important. They're
+linked together in a chain, which gives
+us fast sequential access. You can see
+here at the bottom, the yellow boxes are
+leaf nodes. The red dashed arrows
+between them are pointers, just like in
+a linked list. So, we can move from one
+leaf to the next without going back up
+the tree. This linking makes range
+queries very efficient. For example, if
+we want all keys between 40 and 79, we
+search for 40 once, then follow the
+arrows through 43, 55, 62, and 79. No
+need to restart the search for each key.
+Now, every B+ tree has what we call an
+order, usually written as M. This
+defines the maximum number of children
+an internal node can have. For example,
+in an order 4 B+ tree, each internal
+node can have at most four children and
+at most three keys. Also, except for the
+root, all nodes must be at least half
+full. Here's a key property. All leaf
+nodes are at the same level. This
+balance is crucial because it ensures
+every search takes exactly the same
+number of steps from root to leaf. For
+example, in our diagram, the root has
+the key 45, which splits the data into
+left and right halves. Each internal
+node narrows the search further and at
+the bottom, all the leaf nodes are
+linked in sorted order. So, how do we
+actually search in a B+ tree? We always
+start at the root and compare the search
+key with the keys in the current node.
+If the key is smaller, we follow the
+left pointer. If it's bigger, we follow
+the right pointer. If it's in between,
+we follow the pointer between those two
+keys. Let's say we're searching for 62.
+We start at the root key 45. Since 62 is
+greater than 45, we move to the right
+child. That node has keys 70 and 83.
+Since 62 is smaller than 70, we go to
+the left child and there we find 55 and
+62 in the leaf node. The key point is no
+matter what key we search for, the
+number of steps from root to leaf is
+always the same because the tree is
+balanced. That's what gives us login
+search time. Let's look at how new
+values are inserted into a B+ tree. Step
+one, just like search, we start at the
+root, follow the keys down, and find the
+correct leaf node for the new value.
+Step two, insert the key in sorted order
+inside that leaf. If the leaf still has
+room, we're done. But if the leaf
+overflows, meaning it now has more keys
+than allowed, we split it into two
+nodes.
+The middle key moves up to the parent as
+a separator. The splitting process is
+very similar to what I explained in my B
+tree insertion video, so check that out
+for the detailed steps. Just remember,
+in a B+ tree, the promoted key stays in
+the leaf as well. In our current tree,
+if we insert 35, we search and land in
+the leaf 30 and 34
+43.
+We insert it in order. So it becomes
+it's 30 34 and 35 43 40. If promoting
+causes the parent to overflow, we keep
+splitting upward. And if the root
+overflows, we create a new route. The
+important part is after every insertion,
+the tree stays balanced and all leaves
+remain at the same level. Now let's see
+how deletion works in a B+ tree. Just
+like with insertion, we start by
+searching for the key we want to delete.
+And remember, since this is a B+ tree,
+all the actual data lives in the leaf
+nodes. Let's work through an example.
+Here's our tree. Now, let's say we want
+to delete the number 62.
+First, we search for it. We start from
+the root, follow the path to the right
+of 45, then to the left of 70, and we
+find 62 in the leaf node that contains
+55. 62.
+Before we delete, here's the rule. We
+delete first. Then if the node
+underflows, we try borrowing from a
+sibling. If borrowing isn't possible, we
+merge.
+So let's delete 62. So that leaf now
+contains just 55.
+In an order for a tree, a leaf must have
+at least two keys. So this is an
+underflow. We check if borrowing is
+possible, but the sibling 79 80 already
+has the minimum, so it can't lend. The
+last option is merge. To merge, we
+simply combine 55 with the sibling 79.
+80 making 55 79 80 and then remove the
+parent key 70. In a B+ tree, 70 is only
+a separator. So it's fine to delete it.
+Now let's see a case where borrowing is
+possible. Suppose we want to delete 86.
+Just like before, we first delete it.
+The leaf 86 88 becomes 88, which breaks
+the minimum keys rule. We check
+borrowing. And this time it works
+because the left sibling has three keys
+more than the minimum. So we borrow move
+the boundary key 80 over. Now the leaves
+are 55 79 and 80 88 and we update the
+parent separator to 80. The main goal
+throughout this whole process is to keep
+the tree balanced. After deletion all
+leaves must remain at the same level and
+the tree structure must satisfy all the
+B+ tree properties. All right, let's
+wrap this up with the key takeaways. A
+B+ tree is a self-balancing search tree
+where all the data lives in the leaf
+nodes and those leaves are linked
+together for fast range queries. Here's
+what makes them powerful. Searching,
+inserting, and deleting all work in log
+end time because the tree stays
+perfectly balanced. When a node gets too
+full, we split it. When it gets too
+empty, we borrow from neighbors or merge
+with siblings.
+Thank you for watching. If this was
+helpful, give it a like and subscribe
+for more algorithms and data structure
+videos.

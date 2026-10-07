@@ -1,0 +1,225 @@
+ Hello friends, welcome to Gate Smashers
+ In this video we are going to discuss
+various properties of asymptotic notations
+ And here we will talk about reflexive property,
+ symmetric property and transitive property
+ And these properties will be very beneficial for your competitive exams or college or university level exams
+ So guys, like the video quickly, subscribe
+the channel if you haven't done it yet
+ And please press the bell button so
+ that you get all the latest notifications
+ So as we have discussed in the last
+video that we have asymptotic notations
+ First of all, there is a big O notation
+ Big Omega, theta, small o and small omega
+ And we can write it in a simple way
+ What does big O mean?
+ Fn less than equal to c.gn, c here is constant
+ If you want to write it in a simple term, 
+you can also take it like this
+ Let's say a less than equal to b, that's it
+ If I assume Fn as a, gn=b, then you can simply represent that
+ a should always be less than equal to b
+ Here c value is also there, but if we don't want to write c
+ You can remember it in this way in a simple way
+ If we talk about such big omega, then what does it mean?
+ Fn should be greater than equal to c.gn, 
+where c is again the constant
+ So you can remember it in this way in a simple way
+ If we talk about theta, then what does theta mean?
+ That Fn should be greater than gn and smaller than gn
+ So what does this mean?
+ That Fn should be equal to what? gn
+ Which you can call c.gn or you can write it in a simple way
+ a is equal to b, that's it
+ Now if you want to see it here
+ Let's say if we talk about Fn, Fn is 2n square
+The meaning is simple
+ If we have a function, the time complexity of that function is 2n square
+ Now if I want to write a function greater than this
+ Then I have already discussed what greater than this is
+ n square, you have to write the closest, write the tightest here
+ So what is the closest in the tightest? n square
+ And what is your lowest in the tightest? n square
+ That is called the greatest lower bound and least upper bound
+ Now if we talk about c2 here
+ So what value of c2 should you take here? 3
+ And if we talk about c1 here
+ You take c1's value 1
+ So see 1.n square means n square is always less than equal to 2n square
+ And it is always less than equal to 3.n square
+ So what does this mean?
+ That the value of Fn is equal to gn means a is equal to b
+ Next we have small o
+ Small o means Fn less than c.gn
+ So what is the difference here?
+ In which big o we have equal to, here it is not equal to
+ So you can write it in a simple way
+ a less than b
+ And last we have small omega
+ This means a greater than b
+ Because in big omega we have equal to
+ Here equal to is not there
+ So if you want to understand it in a different way
+ So let's see if I have Fn, n square
+ If I have Fn, any function
+ Its time complexity is n square
+ So what will gn come here?
+ gn will come n cube
+ n4, n5
+ You have to write upper bound here
+ But don't write the tightest closer
+ Because here equal to sign is not there
+ So you write n cube, n4, 2n, all 
+big functions can be written here
+ And here if we talk, let's say Fn is n square
+ So it should be big
+ Now how much gn should be here?
+ What can gn be here?
+ it can be n, log n
+ And here n power can be 1 by 2
+ Log of log n can be
+ Means small value has to be taken here
+ Not equal to
+ Because in big o and big omega we use equal to
+ So here we write the tightest value
+ But here we don't write the tightest value
+ We have to write lower value or upper value
+ So this is all about the main properties of the big o, big omega
+ Theta and small o and small omega
+ Now let's talk reflexive, symmetric, transitive
+ What is the meaning of reflexive?
+ That we check the value of one function with the other
+ Means we check one number
+ That whether a is equal to a or not
+ Means if I keep this side and this side
+ Then we have to keep both equal
+ So it's simple, means if we talk about big o
+ So in big o if I take the value of fn, n square
+ And take the value of gn, n square
+ So obviously both are equal
+ Why? Because it has equal to sign
+ Wherever you get equal to sign
+ Means reflexive property will hold there
+ If we talk about big omega
+ So see in big omega also equal to sign is coming
+ Like we talked here
+ If I take fn, n square
+ So what will be gn?
+ It will be n square
+ Yes, you can do the value of c up and down
+ But function can be equal there
+ So here reflexive property is also holding
+ In theta it is equal to
+ So you can directly see here and write
+ Like a less than equal to b
+ I put one in one value
+ B value also has to be put one
+ So one less than equal to one
+ Is it true or false? Obviously true
+ Here if I put one on both sides
+ One greater than equal to one, true or false? True
+ One is equal to one, true
+ Next if we talk about small o
+ See in small o, one less than one
+ No, one less than equal to one is fine
+ But one is not less than one
+ So this property is not holding
+ See in small omega also one greater than one
+ On both sides you have to put the same value
+ In case of reflexive
+ Because it is self-looping, self-checking
+ So one greater than one, false
+ So in these two this property is not holding
+ It is happening in the other three
+ Next comes symmetric property
+ What does symmetric property mean?
+ That if a is greater than b
+ So b should be greater than a
+ If a is greater than b, then b should be greater than a
+ So obviously if we talk about big O here
+ So let's say if I take fn value as n square
+ Means if I take a value as n square
+ And b value let's say I take here n cube
+ So n square is greater than n cube
+ But is n cube greater than
+ You can say that is n square greater than n cube
+ Means if a is less than b
+ So b should be less than a
+ But it is not necessary
+ Because this value is greater than this
+ So symmetric property is not holding in this
+ It is happening in the case of equal to
+ Means if you take equal to on both sides
+ But that is a reflexive property
+ But what does symmetric mean?
+ That if one is less than two
+ Then two should be less than one
+ But this property will not hold here
+ And neither where will it happen
+in the case of big omega
+ In case of theta this property holds
+ Because in case of theta we write equal to
+ Means a is equal to b
+ b is equal to a
+ Obviously if you let's say n square is equal to n square
+ And if you can write the opposite
+ Then n square is equal to n square
+ So remember this point here
+ That only in case of theta symmetric property holds
+ Same if we talk about small O
+ In case of small omega this property will not hold
+ Because here it is the same
+ Less than or greater than or equal to is not there
+ Next comes transitive property
+ Transitive property means
+ That let's say if function fn is big O of gn
+ And gn is big O of hn
+ This is given that fn is equal to big O of gn
+ And it is given that gn is equal to big O of hn
+ So fn should be big O of hn
+ So I think this is clearly visible to you here
+ Let's say if I take value of fn n square
+ And here I take n cube
+ So what does big O mean?
+ Greater than
+ So n square is greater than n cube
+ And here let's say gn is n cube
+ So what is the meaning of greater?
+ You take n cube, take n power 4
+ Obviously this means that if a is less than or equal to b
+ b is less than or equal to c
+ Then a is less than or equal to c
+ Is it true or false?
+ Obviously it is true
+ So transitive property is holding
+ Same in the case of big omega
+ Just change the sign
+ Means if a is greater than or equal to b
+ b is greater than or equal to c
+ So a is greater than or equal to c
+ Obviously this will happen
+ So next property here is holding transitive
+ In the case of big omega
+ In the case of theta also obviously equal to
+ So in the case of equal to
+ So definitely a is equal to b
+ b is equal to c
+ So a is equal to c
+ If we talk like this in small o case
+ Obviously here also it will happen that
+ Let's say a is less than b
+ b is less than c
+ So a is less than c
+ Yes
+ And same if a is greater than b
+ b is greater than c
+ So will a be greater than c?
+ Obviously it will happen
+ So these properties are often
+ Theory questions come
+ In these although
+ There are more chances of theory questions
+ That this property is not hold
+ So you should remember all these points
+Thank You.

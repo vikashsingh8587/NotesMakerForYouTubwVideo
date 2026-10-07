@@ -1,0 +1,1 @@
+{"manifest_version":3,"name":"Video to Handwritten Notes AI","version":"2.0.0","description":"LangGraph-powered YouTube lecture notes","permissions":["activeTab","scripting"],"action":{"default_popup":"popup.html"}}
